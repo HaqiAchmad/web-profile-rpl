@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 15);
+}
+
+.nav ul{
+   display: flex;
+   justify-content: right;
+   list-style: none;
+   margin-right: 10%;
+   
+}
+
+.nav ul a{
+    margin: 15px;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav ul a:hover{
+    color: #e61313;
+}
+
+.navgbr{
+    flex: 1 1 auto;
+    margin-left: 5%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: #121313;
+    font-family: cursive;
+}
+
+.navgbr:hover{
+    color: #261bc2;
+}
+
+/* input[type=text]{
+    width: 240px;
+    text-align: center;
+    background: #0d0d0e;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 240px;
+    padding: 10px 20px;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type=text]:hover , input[type=password]:hover, input[type=alamat]:hover{
+    border-bottom: 1px solid red;
+    color: #000;
+} */
+
+#searchbar{ 
+    margin-left: 15%; 
+    padding:15px; 
+    border-radius: 10px; 
+    background: #e7e7df;
+    /* height: 100px; */
+  } 
+
+
+  input[type=text] { 
+     width: 20%; 
+     height: 35px;
+     -webkit-transition: width 0.15s ease-in-out; 
+     transition: width 0.15s ease-in-out; 
+      color: rgb(14, 14, 14);
+      font-weight: bold;
+      /* font-size: 20px; */
+  } 
+
+
+  input[type=text]:focus { 
+    width: 20%; 
+    color: #0c0c0c;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 17px;
+    text-indent: 3px;
+  } 
+
+  input[type=text]::placeholder{
+      color: rgb(255, 0, 0);
+      font-weight: bold;
+      font-size: 16px;
+  }
+
+
+.src-siswa{
+    margin-left: 5%;
+}
+
+.jdw-mapel{
+    border-collapse: collapse;
+    width: 88%;
+}
+
+.jdw-mapel tr th{
+    background-color: #3427df;
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f9f8ff;
+}
+
+
+.jdw-mapel tr td{
+    /* padding: 5px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.jdw-mapel tr th,  .jdw-mapel tr td{
+    border: 2 px solid #ddd;
+    text-align: center;
+    
+}
+.jdw-mapel tr td img{
+    width: 50px;
+    height: 60px;
+}
+
+.jdw-mapel tr td a{
+    color: #e73434;
+    text-decoration: none;
+
+}
+
+.jdw-mapel tr td a:hover{
+    color: #271479;
+}
+
+
+
+.jdw-piket{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 15);
+    width: 70%;
+}
+
+.jdw-piket thead tr{
+    background-color: #08c938;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.jdw-piket thead tr .senin:hover{
+    color: tomato;
+}
+
+.jdw-piket th,
+.jdw-piket td{
+    padding: 12px 15px;
+    width: 14%;
+    height: 50px;
+
+    text-align: center;
+}
+
+.jdw-piket tbody tr{
+    border-bottom: 1px solid #a8a8a8;
+}
+
+.jdw-piket tbody tr:nth-of-type(even){
+    background-color: #cecece;
+}
+
+.jdw-piket tbody tr:last-of-type {
+    border-bottom: 2px solid #0f637c;
+}
+
+.jdw-piket tbody tr.activeRow{
+    font-weight: bold;
+    color: #2c2fd4;
+}
+
+
+
+.tbl-siswa{
+    border-collapse: collapse;
+    width: 95%;
+}
+
+.tbl-siswa tr th{
+    background-color: #3427df;
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f9f8ff;
+}
+
+
+.tbl-siswa tr td{
+    /* padding: 5px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.tbl-siswa tr th,  .tbl-siswa tr td{
+    border: 2 px solid #ddd;
+    text-align: center;
+    
+}
+.tbl-siswa tr td img{
+    width: 50px;
+    height: 60px;
+}
+
+.tbl-siswa tr td a{
+    color: #e73434;
+    text-decoration: none;
+
+}
+
+.tbl-siswa tr td a:hover{
+    color: #271479;
+}
+
+div .gbr img{
+    /* position: relative; */
+    z-index: 1;
+    top: 0px;
+}
+
+.gbr .txtGbr{
+    position: absolute;
+    top: 20px;
+    right: 0%;
+    z-index: 2;
+    color: #e7e7df;
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+.teks01{
+    text-align: center;
+    font-size: 40px;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: 2px;
+    opacity: 80%;
+}
+
+.judul{
+    text-align: center;
+    color: black;
+    opacity: 60%;
+    font-size: x-large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    
+}
+
+.keterangan{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1d1a1a;
+}
+
+.jabatan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    opacity: 70%;
+}
+
+.nama-orang{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium',  sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    opacity: 65%;
+    line-height: 40px;
+}
+
+.nama-jabatan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    opacity: 70%;
+
+}
+
+.logo{
+    width: 110px;
+    height: 110px;
+}
+
+.thaks{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: rgb(24, 24, 26);
+    letter-spacing: 1px;
+}
+
+.footer{
+    width: 100%;
+    background:  #121313;
+    display: block;
+}
+
+.inner-footer{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: left;
+}
+
+
+.footer-item{
+    width: 95%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.h1-footer{
+    text-align: left;
+    padding: 10px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.footer-item p{
+    color: rgb(85, 79, 79);
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+.footer-bottom{
+    padding: 10px;
+    background: rgb(25, 22, 196);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    /* font-weight: bold; */
+    font-family: cursive;
+}
+
+.view{
+    background-size: 100% 100%;
+    color: #261bc2;
+}
+
+
+.jdw-mapel{
+    border-collapse: collapse;
+    width: 85%;
+}
+
+.jdw-mapel-head{
+    background: rgb(224, 23, 23);
+    height: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.jdw-mapel tbody tr td{
+    color: #251ca0;
+    background: rgb(97, 219, 138);
+    height: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* font-weight: bold; */
+}
+
+.jdw-mapel tbody tr td:hover{
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.jdw-mapel  .waktu{
+    color: #000000;
+    background: rgb(252, 248, 31);
+}
+
+.jdw-mapel  .waktu:hover{
+    background: rgb(75, 223, 61);
+    cursor: pointer;
+}
+
+.jdw-mapel .jam{
+    background: #5047d3;
+    color: rgb(255, 255, 255);
+}
+
+.jdw-mapel .jam:hover{
+    background: #5047d3;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.jdw-mapel .istirahat{
+    background: #cecece;
+    color: black;
+    height: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.jdw-mapel .istirahat:hover{
+    background: rgb(140, 82, 189);
+    color: white;
+    cursor: pointer;
+}
